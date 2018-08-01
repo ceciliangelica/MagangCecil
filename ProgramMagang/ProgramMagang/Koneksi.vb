@@ -14,7 +14,7 @@ Module Koneksi
 
     Public Sub Connect()
         Dim acdb As String
-        acdb = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\ProgramMagang\Database.mdb;"
+        acdb = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\..\Database.mdb;"
         cn = New OleDbConnection(acdb)
         If cn.State = ConnectionState.Closed Then
             cn.Open()
