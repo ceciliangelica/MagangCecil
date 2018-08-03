@@ -62,6 +62,8 @@ Public Class MasterKaryawan
                 cmd.ExecuteNonQuery()
                 Call DataGrid()
                 Call Hapus()
+                InitializeComponent() 'load all the controls again
+                MasterKaryawan_Load(e, e)
             End If
         Catch ex As Exception
             MsgBox(ex.ToString, MsgBoxStyle.Critical, "Terjadi Kesalahan")
